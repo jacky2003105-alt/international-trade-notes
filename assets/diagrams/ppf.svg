@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="740" height="390" preserveAspectRatio="xMinYMin meet" viewBox="0 0 740 390" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>...</title>
+	<desc>...</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="740" height="390"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-390)" style="clip-path: url(#clip)">
+		<g transform="">
+			<path d="M 68,55 L 638,55 Z" style="stroke: rgb(12%,24%,29%); stroke-linecap: butt; stroke-width: 1.6;"/>
+			<path d="M 68,55 L 68,325 Z" style="stroke: rgb(12%,24%,29%); stroke-linecap: butt; stroke-width: 1.6;"/>
+			<text x="645" y="48" style="font-family: 'Arial Unicode MS','PingFang TC',sans-serif; font-size: 12px;fill: rgb(12%,24%,29%); stroke:none;" transform="translate(0,96) scale(1,-1)">X 數量</text>
+			<text x="18" y="337" style="font-family: 'Arial Unicode MS','PingFang TC',sans-serif; font-size: 12px;fill: rgb(12%,24%,29%); stroke:none;" transform="translate(0,674) scale(1,-1)">Y 數量</text>
+			<text x="50" y="36" style="font-family: 'Arial Unicode MS','PingFang TC',sans-serif; font-size: 12px;fill: rgb(12%,24%,29%); stroke:none;" transform="translate(0,72) scale(1,-1)">0</text>
+			<text x="145.42857142857144" y="36" style="font-family: 'Arial Unicode MS','PingFang TC',sans-serif; font-size: 10px;fill: rgb(50%,58%,60%); stroke:none;" transform="translate(0,72) scale(1,-1)">2</text>
+			<text x="226.85714285714286" y="36" style="font-family: 'Arial Unicode MS','PingFang TC',sans-serif; font-size: 10px;fill: rgb(50%,58%,60%); stroke:none;" transform="translate(0,72) scale(1,-1)">4</text>
+			<text x="308.2857142857143" y="36" style="font-family: 'Arial Unicode MS','PingFang TC',sans-serif; font-size: 10px;fill: rgb(50%,58%,60%); stroke:none;" transform="translate(0,72) scale(1,-1)">6</text>
+			<text x="389.7142857142857" y="36" style="font-family: 'Arial Unicode MS','PingFang TC',sans-serif; font-size: 10px;fill: rgb(50%,58%,60%); stroke:none;" transform="translate(0,72) scale(1,-1)">8</text>
+			<text x="471.14285714285717" y="36" style="font-family: 'Arial Unicode MS','PingFang TC',sans-serif; font-size: 10px;fill: rgb(50%,58%,60%); stroke:none;" transform="translate(0,72) scale(1,-1)">10</text>
+			<text x="552.5714285714286" y="36" style="font-family: 'Arial Unicode MS','PingFang TC',sans-serif; font-size: 10px;fill: rgb(50%,58%,60%); stroke:none;" transform="translate(0,72) scale(1,-1)">12</text>
+			<text x="45" y="101.0909090909091" style="font-family: 'Arial Unicode MS','PingFang TC',sans-serif; font-size: 10px;fill: rgb(50%,58%,60%); stroke:none;" transform="translate(0,202) scale(1,-1)">2</text>
+			<text x="45" y="150.1818181818182" style="font-family: 'Arial Unicode MS','PingFang TC',sans-serif; font-size: 10px;fill: rgb(50%,58%,60%); stroke:none;" transform="translate(0,300) scale(1,-1)">4</text>
+			<text x="45" y="199.27272727272725" style="font-family: 'Arial Unicode MS','PingFang TC',sans-serif; font-size: 10px;fill: rgb(50%,58%,60%); stroke:none;" transform="translate(0,398) scale(1,-1)">6</text>
+			<text x="45" y="248.36363636363637" style="font-family: 'Arial Unicode MS','PingFang TC',sans-serif; font-size: 10px;fill: rgb(50%,58%,60%); stroke:none;" transform="translate(0,496) scale(1,-1)">8</text>
+			<text x="45" y="297.45454545454544" style="font-family: 'Arial Unicode MS','PingFang TC',sans-serif; font-size: 10px;fill: rgb(50%,58%,60%); stroke:none;" transform="translate(0,594) scale(1,-1)">10</text>
+			<text x="68" y="363" style="font-family: 'Arial Unicode MS','PingFang TC',sans-serif; font-size: 17px;fill: rgb(12%,24%,29%); stroke:none;" transform="translate(0,726) scale(1,-1)">生產可能線：固定的機會成本</text>
+			<path d="M 68,202.272727 L 556.571429,55 Z" style="stroke: rgb(9%,51%,48%); stroke-linecap: butt; stroke-width: 2.2;"/>
+			<circle cx="68.0" cy="202.27272727272725" r="3" style="stroke: rgb(12%,24%,29%); stroke-linecap: butt; stroke-width: 1; fill: rgb(12%,24%,29%); fill-rule: evenodd;"/>
+			<text x="76.0" y="210.27272727272725" style="font-family: 'Arial Unicode MS','PingFang TC',sans-serif; font-size: 11px;fill: rgb(12%,24%,29%); stroke:none;" transform="translate(0,420) scale(1,-1)">L/a_LY＝6</text>
+			<circle cx="556.5714285714286" cy="55.0" r="3" style="stroke: rgb(12%,24%,29%); stroke-linecap: butt; stroke-width: 1; fill: rgb(12%,24%,29%); fill-rule: evenodd;"/>
+			<text x="451.57142857142856" y="68.0" style="font-family: 'Arial Unicode MS','PingFang TC',sans-serif; font-size: 11px;fill: rgb(12%,24%,29%); stroke:none;" transform="translate(0,136) scale(1,-1)">L/a_LX＝12</text>
+			<circle cx="312.2857142857143" cy="128.63636363636363" r="3" style="stroke: rgb(12%,24%,29%); stroke-linecap: butt; stroke-width: 1; fill: rgb(12%,24%,29%); fill-rule: evenodd;"/>
+			<text x="320.2857142857143" y="136.63636363636363" style="font-family: 'Arial Unicode MS','PingFang TC',sans-serif; font-size: 11px;fill: rgb(12%,24%,29%); stroke:none;" transform="translate(0,273) scale(1,-1)">A</text>
+			<path d="M 312.285714,128.636364 L 393.714286,128.636364 Z" style="stroke: rgb(71%,48%,14%); stroke-linecap: butt; stroke-width: 1.6;"/>
+			<path d="M 393.714286,128.636364 L 393.714286,104.090909 Z" style="stroke: rgb(71%,48%,14%); stroke-linecap: butt; stroke-width: 1.6;"/>
+			<text x="400" y="144" style="font-family: 'Arial Unicode MS','PingFang TC',sans-serif; font-size: 12px;fill: rgb(71%,48%,14%); stroke:none;" transform="translate(0,288) scale(1,-1)">增加 2X，放棄 1Y</text>
+			<text x="290" y="280" style="font-family: 'Arial Unicode MS','PingFang TC',sans-serif; font-size: 12px;fill: rgb(9%,51%,48%); stroke:none;" transform="translate(0,560) scale(1,-1)">斜率＝−a_LX/a_LY＝−1/2</text>
+			<text x="68" y="8" style="font-family: 'Arial Unicode MS','PingFang TC',sans-serif; font-size: 10px;fill: rgb(50%,58%,60%); stroke:none;" transform="translate(0,16) scale(1,-1)">依簡報概念重繪。數值為驗證斜率與切點的示例，不是實證資料。</text>
+		</g>
+	</g>
+</svg>
