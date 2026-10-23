@@ -20,7 +20,7 @@
 			<path d="M 347.5,65 L 347.5,145.016665 Z" style="stroke: rgb(50%,58%,60%); stroke-linecap: butt; stroke-width: 1.5; stroke-dasharray: 3, 4;"/>
 			<path d="M 70,145.016665 L 347.5,145.016665 Z" style="stroke: rgb(50%,58%,60%); stroke-linecap: butt; stroke-width: 1.5; stroke-dasharray: 3, 4;"/>
 			<circle cx="347.5" cy="145.01666493091716" r="3" style="stroke: rgb(12%,24%,29%); stroke-linecap: butt; stroke-width: 1; fill: rgb(12%,24%,29%); fill-rule: evenodd;"/>
-			<text x="325.5" y="125.01666493091716" style="font-family: 'Arial Unicode MS','PingFang TC',sans-serif; font-size: 11px;fill: rgb(12%,24%,29%); stroke:none;" transform="translate(0,250) scale(1,-1)">E₀</text>
+			<text x="325.5" y="125.01666493091716" style="font-family: 'Arial Unicode MS','PingFang TC',sans-serif; font-size: 11px;fill: rgb(12%,24%,29%); stroke:none;" transform="translate(0,250) scale(1,-1)">E0</text>
 			<text x="370" y="300" style="font-family: 'Arial Unicode MS','PingFang TC',sans-serif; font-size: 11px;fill: rgb(12%,24%,29%); stroke:none;" transform="translate(0,600) scale(1,-1)">左起：X 部門 VMPL</text>
 			<text x="370" y="278" style="font-family: 'Arial Unicode MS','PingFang TC',sans-serif; font-size: 11px;fill: rgb(50%,58%,60%); stroke:none;" transform="translate(0,556) scale(1,-1)">右起：Y 部門 VMPL</text>
 			<text x="370" y="256" style="font-family: 'Arial Unicode MS','PingFang TC',sans-serif; font-size: 11px;fill: rgb(9%,51%,48%); stroke:none;" transform="translate(0,512) scale(1,-1)">交點工資：w</text>
