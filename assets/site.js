@@ -254,3 +254,28 @@ var ok=Math.abs(v-a)<=tol||Math.abs(v*100-a)<=tol||Math.abs(v/100-a)<=tol*0.01+1
 res.textContent=ok?'答對了':'再算算看';res.className='res '+(ok?'ok':'no');
 if(ok){var q=w.closest('.q');var t=q&&q.querySelector('.toggle');if(t&&t.getAttribute('aria-expanded')!=='true')t.click();}});
 document.addEventListener('keydown',function(e){if(e.key==='Enter'&&e.target.closest&&e.target.closest('.numans input')){var b=e.target.closest('.numans').querySelector('.chk');b&&b.click();}});})();
+
+/* 簡報對照：讀到哪一段（畫面上方約 35% 的位置），左邊就換成那一段的簡報 */
+(function(){
+  var segs=[].slice.call(document.querySelectorAll('.sl-seg'));
+  if(!segs.length)return;
+  var ticking=false;
+  function upd(){
+    ticking=false;
+    var y=window.innerHeight*0.35;
+    segs.forEach(function(seg){
+      var r=seg.getBoundingClientRect();
+      if(r.bottom<0||r.top>window.innerHeight)return;
+      var bs=seg.querySelectorAll('.sl-b'),g='0';
+      for(var i=0;i<bs.length;i++){if(bs[i].getBoundingClientRect().top<=y)g=bs[i].dataset.g;else break;}
+      var cur=seg.querySelector('.sl-g.on');
+      if(cur&&cur.dataset.g===g)return;
+      if(cur)cur.classList.remove('on');
+      var nx=seg.querySelector('.sl-g[data-g="'+g+'"]');
+      if(nx){nx.classList.add('on','flash');setTimeout(function(){nx.classList.remove('flash')},500);}
+    });
+  }
+  window.addEventListener('scroll',function(){if(!ticking){ticking=true;requestAnimationFrame(upd);}},{passive:true});
+  window.addEventListener('resize',upd);
+  upd();
+})();

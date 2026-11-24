@@ -529,22 +529,34 @@ table.cmp td,table.cmp th{vertical-align:top}
 :root[data-theme="dark"] .tw-svg .tw-lab{fill:#3a4354}
 :root[data-theme="dark"] .tw-svg .tw-note,:root[data-theme="dark"] .tw-svg .tw-title{fill:#1a2230}
 
-/* ── 簡報對照（ui/slides.py）：左簡報、右這頁的筆記，整頁一起捲 ── */
+/* ── 簡報對照（ui/slides.py）：右邊筆記連續往下讀；左邊簡報固定在畫面上，讀到哪一段就換成那一段的簡報 ── */
 body.has-slides .wrap{max-width:1500px}
-.sl-row{display:grid;grid-template-columns:minmax(0,46fr) minmax(0,54fr);column-gap:30px;align-items:start;
-  padding:22px 0;border-top:1px solid var(--line)}
-.sl-rows>.sl-row:first-child{border-top:0;padding-top:4px}
-.sl-l{display:flex;flex-direction:column;gap:12px}
-.sl-l,.sl-r{min-width:0}
-.sl-r>:first-child{margin-top:0}
-.sl-r>h3:first-child{border-top:0;padding-top:0}
+.sl-seg{display:grid;grid-template-columns:minmax(0,44fr) minmax(0,56fr);column-gap:30px;padding:4px 0 8px}
+.sl-view,.sl-text{min-width:0}
+.sl-stick{position:sticky;top:76px}
+.sl-g{display:none;gap:10px}
+.sl-g.on{display:grid;grid-template-columns:minmax(0,1fr)}
+.sl-g[data-n="3"].on,.sl-g[data-n="4"].on{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+.sl-g.on[data-n="5"],.sl-g.on[data-n="6"],.sl-g.on[data-n="7"],.sl-g.on[data-n="8"],.sl-g.on[data-n="9"]{grid-template-columns:repeat(3,minmax(0,1fr))}
+.sl-g .sl-pg img{max-height:calc((100vh - 120px) / 2);object-fit:contain;background:#fff}
+.sl-g[data-n="1"] .sl-pg img{max-height:calc(100vh - 120px)}
 .sl-pg{display:block;text-decoration:none;border:1px solid var(--line);border-radius:8px;overflow:hidden;background:#fff}
 .sl-pg img{display:block;width:100%;height:auto}
 .sl-pg span{display:block;font-size:12.5px;color:var(--text-3);padding:4px 8px;border-top:1px solid var(--line);background:var(--surface)}
 .sl-pg:hover{border-color:var(--accent)}
+.sl-g.flash .sl-pg{animation:slflash .5s}
+@keyframes slflash{from{opacity:.35}to{opacity:1}}
+.sl-text>.sl-b>:first-child{margin-top:0}
+.sl-text>.sl-b:first-of-type>h3:first-child{border-top:0;padding-top:0}
+.sl-mob{display:none}
 .sl-rows>.cc{margin:18px 0}
 @media(max-width:1180px){
   body.has-slides .wrap{max-width:var(--w)}
-  .sl-row{grid-template-columns:minmax(0,1fr);row-gap:14px}
-  .sl-l{max-width:620px}
+  .sl-seg{grid-template-columns:minmax(0,1fr)}
+  .sl-view{display:none}
+  .sl-mob{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin:14px 0 10px}
+  .sl-mob[data-n="1"]{grid-template-columns:minmax(0,1fr);max-width:420px}
+  .sl-mob[data-n="2"]{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .sl-mob .sl-pg span{font-size:11px;padding:2px 5px}
 }
+@media print{.sl-view{display:none}.sl-mob{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}}
